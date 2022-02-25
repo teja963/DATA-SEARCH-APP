@@ -14,6 +14,22 @@ class MainActivity: AppCompatActivity() {                          //First we ne
         setContentView(R.layout.activity_main)                     //We need to connect activity_main to MainActivity through setcontent
 
 
+    button_display.setOnClickListener {
+        Log.i("MainActivity", "Display Button")          //Debugging purpose
+        Toast.makeText(this, "Display Pressed", Toast.LENGTH_SHORT).show()   //Toast Notifications
+    }
+
+
+    button_search.setOnClickListener {
+        Log.i("MainAcitivity", "Search Button")
+
+        val message: String = user_input.text.toString()   //use button_id to take input
+        val intent = Intent(this, SearchActivity::class.java) //Our intention is to move from one page to another by kotlin reflection
+        intent.putExtra("input_message", message)  //loading message into intent
+        startActivity(intent)
+    }
+
+
 
 
     }

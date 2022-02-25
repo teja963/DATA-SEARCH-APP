@@ -19,7 +19,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".SearchActivity">
+        <activity
+            android:name=".SearchActivity">
+            android: exported = "true">
 
         </activity>
 

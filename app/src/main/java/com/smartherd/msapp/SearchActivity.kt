@@ -14,6 +14,9 @@ class SearchActivity: AppCompatActivity() {
         val input_message =  bundle!!.getString("input_message")
         Toast.makeText(this, input_message, Toast.LENGTH_SHORT).show()
 
+
+
+
     }
 
 }

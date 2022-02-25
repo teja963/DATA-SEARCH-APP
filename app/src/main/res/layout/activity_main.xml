@@ -15,19 +15,19 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="134dp"
-        android:layout_marginTop="108dp"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="100dp"
         android:text="Display" />
 
     <EditText
         android:id="@+id/user_input"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="389dp"
+        android:layout_height="74dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="239dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="201dp"
         android:ems="10"
         android:hint="Enter the text"
         android:inputType="textPersonName" />
@@ -36,11 +36,13 @@
         android:id="@+id/button_search"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/button_display"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="156dp"
-        android:layout_marginBottom="170dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginBottom="110dp"
         android:text="Search" />
 </RelativeLayout>
 

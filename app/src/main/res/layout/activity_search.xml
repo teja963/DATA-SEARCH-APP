@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/View_input_message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:baselineAligned="false"
+        android:text="Text View seeing"
+        android:textSize="30sp"
+        android:textColor="#424230"
+        android:textStyle="normal"
+        android:textAlignment="center"
+        android:layout_margin="20dp"/>
+
+
+
 </LinearLayout>

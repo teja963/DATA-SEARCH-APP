@@ -34,6 +34,7 @@ class MainActivity: AppCompatActivity() {                          //First we ne
         val intent = Intent()
         intent.action = Intent.ACTION_SEND
         intent.putExtra(Intent.EXTRA_TEXT, message)
+        intent.type = "text/plain"      //you should mention this for type of apps applicable to
         startActivity(Intent.createChooser(intent, "Share to:"))
     }
 

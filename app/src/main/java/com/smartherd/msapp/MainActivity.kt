@@ -24,12 +24,18 @@ class MainActivity: AppCompatActivity() {                          //First we ne
         Log.i("MainAcitivity", "Search Button")
 
         val message: String = user_input.text.toString()   //use button_id to take input
-        val intent = Intent(this, SearchActivity::class.java) //Our intention is to move from one page to another by kotlin reflection
+        val intent = Intent(this, SearchActivity::class.java) //Our intention is to move from one page(Explicit Intent) to another by kotlin reflection
         intent.putExtra("input_message", message)  //loading message into intent
         startActivity(intent)
     }
 
-
+    button_share.setOnClickListener {
+        var message: String = user_input.text.toString()
+        val intent = Intent()
+        intent.action = Intent.ACTION_SEND
+        intent.putExtra(Intent.EXTRA_TEXT, message)
+        startActivity(Intent.createChooser(intent, "Share to:"))
+    }
 
 
     }

@@ -10,40 +10,55 @@
 
     <Button
         android:id="@+id/button_display"
-        android:layout_width="wrap_content"
+        android:layout_width="99dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="131dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginRight="110dp"
         android:text="Display" />
 
     <EditText
         android:id="@+id/user_input"
-        android:layout_width="389dp"
-        android:layout_height="74dp"
+        android:layout_width="401dp"
+        android:layout_height="63dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="201dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="193dp"
         android:ems="10"
         android:hint="Enter the text"
         android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/button_search"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="103dp"
+        android:layout_height="53dp"
         android:layout_below="@+id/button_display"
         android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="133dp"
-        android:layout_marginTop="270dp"
-        android:layout_marginBottom="110dp"
-        android:text="Search" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="148dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="155dp"
+        android:layout_marginRight="110dp"
+        android:shadowRadius="0.5"
+        android:text="Search"
+        android:textColorHighlight="#2ADA1D" />
+
+    <Button
+        android:id="@+id/button_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_search"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Share"
+        android:textAlignment="center"
+        />
 </RelativeLayout>
 
 

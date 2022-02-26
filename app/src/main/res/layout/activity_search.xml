@@ -5,11 +5,11 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/View_input_message"
+        android:id="@+id/view_input_message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:baselineAligned="false"
-        android:text="Text View seeing"
+        android:text="Demo text view"
         android:textSize="30sp"
         android:textColor="#424230"
         android:textStyle="normal"

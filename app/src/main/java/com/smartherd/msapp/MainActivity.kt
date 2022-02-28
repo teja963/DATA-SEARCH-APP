@@ -33,11 +33,15 @@ class MainActivity: AppCompatActivity() {                          //First we ne
         var message: String = user_input.text.toString()
         val intent = Intent()
         intent.action = Intent.ACTION_SEND
-        intent.putExtra(Intent.EXTRA_TEXT, message)
+        intent.putExtra(Intent.EXTRA_TEXT, message)        //this is implicit intent so need to use EXTRA_TEXT
         intent.type = "text/plain"      //you should mention this for type of apps applicable to
         startActivity(Intent.createChooser(intent, "Share to:"))
     }
 
+    button_recycler_view.setOnClickListener {
+        val intent = Intent(this, RecycleActivity::class.java)
+        startActivity(intent)
+    }
 
     }
 

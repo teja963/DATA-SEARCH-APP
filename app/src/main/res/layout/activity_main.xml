@@ -10,72 +10,67 @@
     tools:visibility="visible">
 
     <Button
+        android:id="@+id/button_recycler_view"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="67dp"
+        android:text="Recycle View"
+        android:textAlignment="center"
+        android:background="#6292A4"/>
+
+    <Button
         android:id="@+id/button_display"
-        android:layout_width="124dp"
-        android:layout_height="59dp"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="279dp"
-        android:layout_marginLeft="130dp"
-        android:layout_marginTop="91dp"
-        android:layout_marginRight="110dp"
-        android:background="#6292A4"
+        android:layout_marginTop="67dp"
         android:text="Display"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:background="#6292A4"/>
 
     <EditText
         android:id="@+id/user_input"
-        android:layout_width="401dp"
-        android:layout_height="72dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="177dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="167dp"
         android:ems="10"
-        android:hint="Enter the text"
+        android:hint="Enter the text.........."
         android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/button_search"
-        android:layout_width="380dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button_display"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="157dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="267dp"
         android:background="#E91E63"
         android:text="Search"
         android:textAlignment="center" />
 
     <Button
         android:id="@+id/button_share"
-        android:layout_width="401dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button_search"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="9dp"
-        android:layout_marginTop="371dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="367dp"
         android:background="#28D823"
         android:text="Share"
-        android:textAlignment="center" />
-
-    <Button
-        android:id="@+id/button_recycler_view"
-        android:layout_width="wrap_content"
-        android:layout_height="67dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="94dp"
-        android:layout_marginBottom="592dp"
-        android:background="#966873"
-        android:text="Recycler_view"
         android:textAlignment="center" />
 
 

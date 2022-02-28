@@ -13,6 +13,11 @@ class MainActivity: AppCompatActivity() {                          //First we ne
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)                     //We need to connect activity_main to MainActivity through setcontent
 
+    button_recycler_view.setOnClickListener {
+        Log.i("MainActivity", "Recycler Button")
+        val intent = Intent(this, RecycleActivity::class.java)
+        startActivity(intent)
+    }
 
     button_display.setOnClickListener {
         Log.i("MainActivity", "Display Button")          //Debugging purpose
@@ -38,10 +43,7 @@ class MainActivity: AppCompatActivity() {                          //First we ne
         startActivity(Intent.createChooser(intent, "Share to:"))
     }
 
-    button_recycler_view.setOnClickListener {
-        val intent = Intent(this, RecycleActivity::class.java)
-        startActivity(intent)
-    }
+
 
     }
 

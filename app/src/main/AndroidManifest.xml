@@ -28,6 +28,10 @@
             android:name=".RecycleActivity">
         </activity>
 
+        <activity
+            android:name=".Model">
+
+        </activity>
 
     </application>
 

@@ -1,6 +1,7 @@
 package com.smartherd.msapp
 
 import android.content.Context
+import android.content.Intent
 import android.support.v7.view.menu.ActionMenuItemView
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
@@ -8,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_list.view.*
+import kotlinx.android.synthetic.main.activity_main.*
 
 class HobbiesAdapter(val context: Context, val hobbies: List<Hobby>) : RecyclerView.Adapter<HobbiesAdapter.MyviewHolder>() {
 
@@ -29,8 +31,19 @@ class HobbiesAdapter(val context: Context, val hobbies: List<Hobby>) : RecyclerV
         var currentHobby: Hobby? = null
         var currentPosition: Int = 0
         init {
+            //for displaying cardview when clicked
             itemView.setOnClickListener {
                 Toast.makeText(context,currentHobby!!.title + " Clicked!!", Toast.LENGTH_SHORT).show()
+            }
+            //for sharing purpose
+            itemView.imgShare.setOnClickListener {
+                var message: String = "My Hobby is " + currentHobby!!.title
+                val intent = Intent()
+                intent.action = Intent.ACTION_SEND
+                intent.putExtra(Intent.EXTRA_TEXT, message)        //this is implicit intent so need to use EXTRA_TEXT
+                intent.type = "text/plain"      //you should mention this for type of apps applicable to
+
+                context.startActivity(Intent.createChooser(intent, "Share to:")) //so we are in adapter so use context.startActivity
             }
         }
 

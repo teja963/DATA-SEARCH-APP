@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_list.view.*
 
 class HobbiesAdapter(val context: Context, val hobbies: List<Hobby>) : RecyclerView.Adapter<HobbiesAdapter.MyviewHolder>() {
@@ -25,8 +26,19 @@ class HobbiesAdapter(val context: Context, val hobbies: List<Hobby>) : RecyclerV
 
 
     inner class MyviewHolder(itemView: View): RecyclerView.ViewHolder(itemView){   //inorder to bind the data each of the view we have MyviewHolder class
+        var currentHobby: Hobby? = null
+        var currentPosition: Int = 0
+        init {
+            itemView.setOnClickListener {
+                Toast.makeText(context,currentHobby!!.title + " Clicked!!", Toast.LENGTH_SHORT).show()
+            }
+        }
+
         fun setData(hobby: Hobby?, pos: Int){     //Hobby? nullable
             itemView.txvTitle.text = hobby!!.title    //each list layout its representing
+
+            this.currentHobby = hobby
+            this.currentPosition = pos
         }
     }
 

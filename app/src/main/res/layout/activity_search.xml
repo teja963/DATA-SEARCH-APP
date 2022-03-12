@@ -8,14 +8,13 @@
         android:id="@+id/view_input_message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
         android:baselineAligned="false"
         android:text="Demo text view"
-        android:textSize="30sp"
-        android:textColor="#424230"
-        android:textStyle="normal"
         android:textAlignment="center"
-        android:layout_margin="20dp"/>
-
+        android:textColor="#424230"
+        android:textSize="30sp"
+        android:textStyle="normal" />
 
 
 </LinearLayout>

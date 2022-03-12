@@ -1,9 +1,9 @@
-package com.smartherd.msapp
+package com.smartherd.msapp.activities
 
-import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
+import com.smartherd.msapp.R
 import kotlinx.android.synthetic.main.activity_search.*
 
 class SearchActivity: AppCompatActivity() {
@@ -16,8 +16,5 @@ class SearchActivity: AppCompatActivity() {
         Toast.makeText(this, input_message, Toast.LENGTH_SHORT).show()
 
         view_input_message.text = input_message
-
-
     }
-
 }

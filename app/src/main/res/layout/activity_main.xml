@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="10dp"
     android:visibility="visible"
-    tools:context=".MainActivity"
+    tools:context=".activities.MainActivity"
     tools:visibility="visible">
 
     <Button
@@ -17,9 +17,9 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="10dp"
         android:layout_marginTop="67dp"
+        android:background="#6292A4"
         android:text="Recycle View"
-        android:textAlignment="center"
-        android:background="#6292A4"/>
+        android:textAlignment="center" />
 
     <Button
         android:id="@+id/button_display"
@@ -30,9 +30,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="279dp"
         android:layout_marginTop="67dp"
+        android:background="#6292A4"
         android:text="Display"
-        android:textAlignment="center"
-        android:background="#6292A4"/>
+        android:textAlignment="center" />
 
     <EditText
         android:id="@+id/user_input"

@@ -1,17 +1,17 @@
-package com.smartherd.msapp
+package com.smartherd.msapp.adapters
 
 import android.content.Context
 import android.content.Intent
-import android.support.v7.view.menu.ActionMenuItemView
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import com.smartherd.msapp.models.Hobby
+import com.smartherd.msapp.R
 import kotlinx.android.synthetic.main.activity_list.view.*
-import kotlinx.android.synthetic.main.activity_main.*
 
-class HobbiesAdapter(val context: Context, val hobbies: List<Hobby>) : RecyclerView.Adapter<HobbiesAdapter.MyviewHolder>() {
+class HobbiesAdapter(val context: Context, private val hobbies: List<Hobby>) : RecyclerView.Adapter<HobbiesAdapter.MyviewHolder>() {
 
     override fun onCreateViewHolder(p0: ViewGroup, p1: Int): MyviewHolder {
        val view = LayoutInflater.from(context).inflate(R.layout.activity_list, p0, false) //LayoutInflatter - this a class which can create a view element from the layout files content
@@ -54,5 +54,4 @@ class HobbiesAdapter(val context: Context, val hobbies: List<Hobby>) : RecyclerV
             this.currentPosition = pos
         }
     }
-
 }

@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import com.smartherd.msapp.models.Hobby
 import com.smartherd.msapp.R
+import com.smartherd.msapp.showToast
 import kotlinx.android.synthetic.main.activity_list.view.*
 
 class HobbiesAdapter(val context: Context, private val hobbies: List<Hobby>) : RecyclerView.Adapter<HobbiesAdapter.MyviewHolder>() {
@@ -33,7 +34,7 @@ class HobbiesAdapter(val context: Context, private val hobbies: List<Hobby>) : R
         init {
             //for displaying cardview when clicked
             itemView.setOnClickListener {
-                Toast.makeText(context,currentHobby!!.title + " Clicked!!", Toast.LENGTH_SHORT).show()
+                context.showToast(currentHobby!!.title + " Clicked!!")
             }
             //for sharing purpose
             itemView.imgShare.setOnClickListener {

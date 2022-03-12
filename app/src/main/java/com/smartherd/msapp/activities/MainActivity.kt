@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import com.smartherd.msapp.R
+import com.smartherd.msapp.showToast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity: AppCompatActivity() {                          //First we need to initialize it
@@ -22,7 +23,7 @@ class MainActivity: AppCompatActivity() {                          //First we ne
 
         button_display.setOnClickListener {
             Log.i("MainActivity", "Display Button")          //Debugging purpose
-            Toast.makeText(this, "Display Pressed", Toast.LENGTH_SHORT).show()   //Toast Notifications
+            showToast("Display Pressed!!")   //Implemented using extensions
         }
 
         button_search.setOnClickListener {

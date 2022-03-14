@@ -28,8 +28,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="67dp"
-        android:layout_marginStart="240dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginStart="200dp"
         android:background="#408DA9"
         android:text="@string/display"
         android:textAlignment="center" />

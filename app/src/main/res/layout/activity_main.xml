@@ -16,7 +16,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="10dp"
         android:layout_marginTop="67dp"
-        android:background="#6292A4"
+        android:background="#408DA9"
         android:text="@string/recycle_view"
         android:textAlignment="center" />
 
@@ -29,7 +29,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="279dp"
         android:layout_marginTop="67dp"
-        android:background="#6292A4"
+        android:background="#408DA9"
         android:text="@string/display"
         android:textAlignment="center" />
 
@@ -56,7 +56,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="10dp"
         android:layout_marginTop="267dp"
-        android:background="#E91E63"
+        android:background="#9F1E49"
         android:text="@string/search"
         android:textAlignment="center" />
 
@@ -69,7 +69,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="10dp"
         android:layout_marginTop="367dp"
-        android:background="#28D823"
+        android:background="#2AA86D"
         android:text="@string/share"
         android:textAlignment="center" />
 

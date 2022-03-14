@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import com.smartherd.msapp.Constants
 import com.smartherd.msapp.R
 import com.smartherd.msapp.showToast
 import kotlinx.android.synthetic.main.activity_main.*
@@ -33,7 +34,7 @@ class MainActivity: AppCompatActivity() {                          //First we ne
 
             val message: String = user_input.text.toString()   //use button_id to take input
             val intent = Intent(this, SearchActivity::class.java) //Our intention is to move from one page(Explicit Intent) to another by kotlin reflection
-            intent.putExtra("input_message", message)  //loading message into intent
+            intent.putExtra(Constants.USER_MSG, message)  //loading message into intent
             startActivity(intent)
         }
 

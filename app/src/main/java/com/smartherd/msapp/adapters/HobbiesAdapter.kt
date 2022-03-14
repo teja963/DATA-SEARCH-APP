@@ -34,25 +34,32 @@ class HobbiesAdapter(val context: Context, private val hobbies: List<Hobby>) : R
         init {
             //for displaying cardview when clicked
             itemView.setOnClickListener {
-                context.showToast(currentHobby!!.title + " Clicked!!")
+                currentHobby?.let {
+                    context.showToast(currentHobby!!.title + " Clicked!!")
+                }
+
             }
             //for sharing purpose
             itemView.imgShare.setOnClickListener {
-                var message: String = "My Hobby is " + currentHobby!!.title
-                val intent = Intent()
-                intent.action = Intent.ACTION_SEND
-                intent.putExtra(Intent.EXTRA_TEXT, message)        //this is implicit intent so need to use EXTRA_TEXT
-                intent.type = "text/plain"      //you should mention this for type of apps applicable to
+               currentHobby?.let {
+                   var message: String = "My Hobby is " + currentHobby!!.title
+                   val intent = Intent()
+                   intent.action = Intent.ACTION_SEND
+                   intent.putExtra(Intent.EXTRA_TEXT, message)        //this is implicit intent so need to use EXTRA_TEXT
+                   intent.type = "text/plain"      //you should mention this for type of apps applicable to
 
-                context.startActivity(Intent.createChooser(intent, "Share to:")) //so we are in adapter so use context.startActivity
+                   context.startActivity(Intent.createChooser(intent, "Share to:")) //so we are in adapter so use context.startActivity
+               }
             }
         }
 
         fun setData(hobby: Hobby?, pos: Int){     //Hobby? nullable
-            itemView.txvTitle.text = hobby!!.title    //each list layout its representing
+          hobby?.let {
+              itemView.txvTitle.text = hobby.title    //each list layout its representing
 
-            this.currentHobby = hobby
-            this.currentPosition = pos
+              this.currentHobby = hobby
+              this.currentPosition = pos
+          }
         }
     }
 }

@@ -12,12 +12,19 @@ class SearchActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_search)
 
-        val bundle: Bundle? = intent.extras    //using nullable bundle, bcz input can't be null
-        val input_message =  bundle!!.getString("input_message")
-        if (input_message != null) {
-            showToast(input_message)    //Implemented using extensions
-        }
+        /*Using Safe call protocol to avoid null pointer exceptions
+            Safe Call ?.
+            Safe Call let ?.{ }
+        */
 
-        view_input_message.text = input_message
+        val bundle: Bundle? = intent.extras    //using nullable bundle, bcz input can't be null
+         /* It will execute only for non-nullable strings to avoid exceptions*/
+        bundle?.let{
+            val input_message =  bundle.getString("input_message")
+            if (input_message != null) {
+                showToast(input_message)
+            }    //Implemented using extensions
+            view_input_message.text = input_message
+        }
     }
 }

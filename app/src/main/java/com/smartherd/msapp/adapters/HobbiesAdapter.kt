@@ -6,7 +6,6 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import com.smartherd.msapp.models.Hobby
 import com.smartherd.msapp.R
 import com.smartherd.msapp.showToast
@@ -29,8 +28,8 @@ class HobbiesAdapter(val context: Context, private val hobbies: List<Hobby>) : R
 
 
     inner class MyviewHolder(itemView: View): RecyclerView.ViewHolder(itemView){   //inorder to bind the data each of the view we have MyviewHolder class
-        var currentHobby: Hobby? = null
-        var currentPosition: Int = 0
+        private var currentHobby: Hobby? = null
+        private var currentPosition: Int = 0
         init {
             //for displaying cardview when clicked
             itemView.setOnClickListener {
@@ -42,7 +41,7 @@ class HobbiesAdapter(val context: Context, private val hobbies: List<Hobby>) : R
             //for sharing purpose
             itemView.imgShare.setOnClickListener {
                currentHobby?.let {
-                   var message: String = "My Hobby is " + currentHobby!!.title
+                   val message: String = "My Hobby is " + currentHobby!!.title
                    val intent = Intent()
                    intent.action = Intent.ACTION_SEND
                    intent.putExtra(Intent.EXTRA_TEXT, message)        //this is implicit intent so need to use EXTRA_TEXT

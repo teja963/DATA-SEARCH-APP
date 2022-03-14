@@ -39,7 +39,7 @@ class MainActivity: AppCompatActivity() {                          //First we ne
         }
 
         button_share.setOnClickListener {
-            var message: String = user_input.text.toString()
+            val message: String = user_input.text.toString()
             val intent = Intent()
             intent.action = Intent.ACTION_SEND
             intent.putExtra(Intent.EXTRA_TEXT, message)        //this is implicit intent so need to use EXTRA_TEXT

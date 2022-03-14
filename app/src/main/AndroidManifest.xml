@@ -21,16 +21,10 @@
 
         <activity
             android:name=".activities.SearchActivity">
-            android: exported = "true">
         </activity>
 
         <activity
             android:name=".activities.RecycleActivity">
-        </activity>
-
-        <activity
-            android:name=".Model">
-
         </activity>
 
     </application>

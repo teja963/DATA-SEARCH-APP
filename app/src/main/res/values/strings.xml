@@ -1,8 +1,11 @@
 <resources>
-    <string name="app_name">MSG App</string>
-    <string name="recycleview">Recycle View</string>
+    <string name="app_name">Data Search App</string>
+    <string name="recycle_view">Recycle View</string>
     <string name="display">Display</string>
     <string name="search">Search</string>
     <string name="share">Share</string>
-    <string name="text">Enter the text</string>
+    <string name="text">Enter the data to search</string>
+    <string name="title">Title</string>
+    <string name="Image">Image File</string>
+    <string name="demo_text_view">Demo Text View</string>
 </resources>

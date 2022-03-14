@@ -22,12 +22,13 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:text="Title"
+            android:text="@string/title"
             android:textColor="#616161"
             android:textSize="18sp"
             android:textStyle="bold" />
 
         <ImageView
+            android:contentDescription="@string/Image"
             android:id="@+id/imgShare"
             android:layout_width="30dp"
             android:layout_height="match_parent"

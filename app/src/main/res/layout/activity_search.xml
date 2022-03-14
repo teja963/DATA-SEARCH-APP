@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:baselineAligned="false"
-        android:text="Demo text view"
+        android:text="@string/demo_text_view"
         android:textAlignment="center"
         android:textColor="#424230"
         android:textSize="30sp"

@@ -23,7 +23,7 @@ class MainActivity: AppCompatActivity() {                          //First we ne
 
         button_display.setOnClickListener {
             Log.i("MainActivity", "Display Button")          //Debugging purpose
-            showToast("Display Pressed!!")   //Implemented using extensions
+            showToast("Display Pressed!!", Toast.LENGTH_LONG)   //Implemented using extensions
         }
 
         button_search.setOnClickListener {

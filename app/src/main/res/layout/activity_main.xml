@@ -14,64 +14,79 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="67dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="125dp"
+        android:layout_marginTop="50dp"
         android:background="#408DA9"
         android:text="@string/recycle_view"
         android:textAlignment="center" />
 
-    <Button
-        android:id="@+id/button_display"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="67dp"
-        android:layout_marginStart="200dp"
-        android:background="#408DA9"
-        android:text="@string/display"
-        android:textAlignment="center" />
-
     <EditText
-        android:id="@+id/user_input"
+        android:id="@+id/input_roll"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="167dp"
+        android:layout_marginTop="130dp"
         android:autofillHints=""
         android:ems="10"
-        android:hint="@string/text"
+        android:hint="@string/rollnum"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/input_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/phone_number"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/input_branch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="280dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/branch"
         android:inputType="textPersonName" />
 
     <Button
-        android:id="@+id/button_search"
+        android:id="@+id/button_save"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="267dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginHorizontal="50dp"
         android:background="#9F1E49"
-        android:text="@string/search"
+        android:text="@string/submit"
         android:textAlignment="center" />
 
-    <Button
-        android:id="@+id/button_share"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="367dp"
-        android:background="#2AA86D"
-        android:text="@string/share"
-        android:textAlignment="center" />
+
 
 
 </RelativeLayout>

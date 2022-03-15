@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "253434483285",
+    "project_id": "data-search-app",
+    "storage_bucket": "data-search-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:253434483285:android:ddaec6481da65f47f27adc",
+        "android_client_info": {
+          "package_name": "com.smartherd.msapp.activities"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "253434483285-maju6bbg6csojkcrsubh6t712mkd5ot2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_nES0uTf0aEPpQ5uodmoRi3ieaVCF0FA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "253434483285-maju6bbg6csojkcrsubh6t712mkd5ot2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

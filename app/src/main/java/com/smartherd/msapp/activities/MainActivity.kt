@@ -1,13 +1,10 @@
 package com.smartherd.msapp.activities
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
-import com.smartherd.msapp.Constants
 import com.smartherd.msapp.R
-import com.smartherd.msapp.showToast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity: AppCompatActivity() {                          //First we need to initialize it
@@ -24,28 +21,32 @@ class MainActivity: AppCompatActivity() {                          //First we ne
             startActivity(intent)
         }
 
-        button_display.setOnClickListener {
-            Log.i(TAG, "Display Button")          //Debugging purpose
-            showToast("Display Pressed!!", Toast.LENGTH_LONG)   //Implemented using extensions
+        button_save.setOnClickListener {
+            Log.i(TAG, "Save Button")
+            /* Taking input from user*/
+            val rollInput: String = input_roll.text.toString()
+            val nameInput: String = input_name.text.toString()
+            val phoneInput: String = input_phone_number.text.toString()
+            val branchInput: String = input_branch.text.toString()
+
+            saveFirestore(rollInput, nameInput, phoneInput, branchInput)
+//            val intent = Intent(this, SearchActivity::class.java) //Our intention is to move from one page(Explicit Intent) to another by kotlin reflection
+//            intent.putExtra(Constants.USER_MSG, message)  //loading message into intent
+//            startActivity(intent)
         }
 
-        button_search.setOnClickListener {
-            Log.i(TAG, "Search Button")
+//        button_share.setOnClickListener {
+//            val message: String = input_roll.text.toString()
+//            val intent = Intent()
+//            intent.action = Intent.ACTION_SEND
+//            intent.putExtra(Intent.EXTRA_TEXT, message)        //this is implicit intent so need to use EXTRA_TEXT
+//            intent.type = "text/plain"      //you should mention this for type of apps applicable to
+//            startActivity(Intent.createChooser(intent, "Share to:"))
+//        }
 
-            val message: String = user_input.text.toString()   //use button_id to take input
-            val intent = Intent(this, SearchActivity::class.java) //Our intention is to move from one page(Explicit Intent) to another by kotlin reflection
-            intent.putExtra(Constants.USER_MSG, message)  //loading message into intent
-            startActivity(intent)
-        }
+    }
 
-        button_share.setOnClickListener {
-            val message: String = user_input.text.toString()
-            val intent = Intent()
-            intent.action = Intent.ACTION_SEND
-            intent.putExtra(Intent.EXTRA_TEXT, message)        //this is implicit intent so need to use EXTRA_TEXT
-            intent.type = "text/plain"      //you should mention this for type of apps applicable to
-            startActivity(Intent.createChooser(intent, "Share to:"))
-        }
+    private fun saveFirestore(rollInput: String, nameInput: String, phoneInput: String, branchInput: String) {
 
     }
 }

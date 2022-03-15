@@ -1,8 +1,8 @@
 package com.smartherd.msapp.activities
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.LinearLayoutManager
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.smartherd.msapp.adapters.HobbiesAdapter
 import com.smartherd.msapp.R
 import com.smartherd.msapp.models.Supplier
@@ -17,7 +17,8 @@ class RecycleActivity: AppCompatActivity() {
     }
 
     private fun setUprecyclerview() {
-        val layoutManager = LinearLayoutManager(this)   //assign the layout
+        val layoutManager =
+            LinearLayoutManager(this)   //assign the layout
         layoutManager.orientation = LinearLayoutManager.VERTICAL  //we r setting orientation
         view_recycler.layoutManager = layoutManager
         val adapter = HobbiesAdapter(this, Supplier.hobbies)  //from Hobbies Adapter and Model.kt

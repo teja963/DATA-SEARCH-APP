@@ -1,7 +1,7 @@
 package com.smartherd.msapp.activities
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.smartherd.msapp.Constants
 import com.smartherd.msapp.R
 import com.smartherd.msapp.showToast
